@@ -130,12 +130,12 @@ NIM : 2241720159</h2>
   ```
 
 - Gambarkan hierarki class atau hubungan antar class yang mungkin ada dalam sistem informasi inventaris barang di jurusan Teknologi Informasi. Berikan contoh relasi antar class (misalnya, inheritance atau association) dalam konteks tersebut.<br>
-  jawab :<br>
-  saya membuat dua kelas yaitu kelas barang dan kelas kategori dimana setiap barang memiliki kategori. dan hal tersebut termasuk kedalam hubungan inheritance.<br>
-  untuk kode bisa dilihat disini<br>
-  Class [barang](barang.java)<br>
-  Class [kategori](kategori.java)<br>
-  Class [main](main.java)<br>
+jawab :<br>
+saya membuat dua kelas yaitu kelas barang dan kelas kategori dimana setiap barang memiliki kategori. dan hal tersebut termasuk kedalam hubungan inheritance.<br>
+untuk kode bisa dilihat disini<br>
+[barang](barang.java)<br>
+[kategori](kategori.java)<br>
+[main](main.java)<br>
 
   <h3> Hasil </h3>
   <img src = "hasil.png">
