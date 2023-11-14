@@ -1,28 +1,22 @@
 package PBO.pertemuan_6.praktikum.tugas;
 
-import java.util.ArrayList;
-
 public class daftarGaji {
-    public int gaji;
-    public pegawai[] listPegawai;
+    private pegawai[] listPegawai;
+    private int jumlahPegawaiSekarang = 0;
 
-    ArrayList<pegawai> listPeg = new ArrayList();
-
-    public daftarGaji(int gaji) {
-        this.gaji = gaji;
+    public daftarGaji(int jumlah_pegawai) {
+        listPegawai = new pegawai[jumlah_pegawai];
     }
 
     public void addPegawai(pegawai p) {
-        p.gaji = p.getGaji() + this.gaji;
-        listPeg.add(p);
+        listPegawai[jumlahPegawaiSekarang] = p;
+        jumlahPegawaiSekarang++;
     }
 
     public void printSemuaGaji() {
-        System.out.println("NIP\t| Nama\t| Alamat\t| Gaji");
-        System.out.println("-----------------------------------------");
-        for (int i = 0; i < listPeg.size(); i++) {
-            System.out.println(listPeg.get(i).nip + "\t| " + listPeg.get(i).nama +
-                    "\t| " + listPeg.get(i).alamat + "\t| " + listPeg.get(i).gaji);
+        for (int i = 0; i < jumlahPegawaiSekarang; i++) {
+            System.out.print(listPegawai[i].getNama() + " mendapatkan gaji ");
+            System.out.println(listPegawai[i].getGaji());
         }
     }
 }

@@ -2,20 +2,16 @@ package PBO.pertemuan_6.praktikum.tugas;
 
 public class main {
     public static void main(String[] args) {
-        // Pegawai non dosen
-        pegawai p1 = new pegawai("2001", "Atma", "Kediri");
-        pegawai p2 = new pegawai("2002", "Yanti", "Blitar");
-        // Dosen
-        dosen d1 = new dosen("2003", "Budi", "Malang");
-        d1.setSKS(20);
-        dosen d2 = new dosen("2004", "Fitri", "Nganjuk");
-        d2.setSKS(25);
+        pegawai pegawai = new pegawai("12345", "budi", "Malang");
 
-        daftarGaji gaji1 = new daftarGaji(5000000);
-        gaji1.addPegawai(p1);
-        gaji1.addPegawai(p2);
-        gaji1.addPegawai(d1);
-        gaji1.addPegawai(d2);
-        gaji1.printSemuaGaji();
+        dosen dosen = new dosen("18123", "jamal", "Malang");
+        dosen.setSKS(6);
+
+        daftarGaji daftarGaji = new daftarGaji(2);
+        daftarGaji.addPegawai(pegawai);
+        daftarGaji.addPegawai(dosen);
+
+        daftarGaji.printSemuaGaji();
+
     }
 }

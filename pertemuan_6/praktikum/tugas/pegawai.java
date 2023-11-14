@@ -1,10 +1,13 @@
 package PBO.pertemuan_6.praktikum.tugas;
 
 public class pegawai {
-    public String nip;
-    public String nama;
-    public String alamat;
-    public int gaji;
+    private String nip;
+    private String nama;
+    private String alamat;
+
+    public pegawai() {
+
+    }
 
     public pegawai(String nip, String nama, String alamat) {
         this.nip = nip;
@@ -12,11 +15,15 @@ public class pegawai {
         this.alamat = alamat;
     }
 
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
     public String getNama() {
-        return nama;
+        return this.nama;
     }
 
     public int getGaji() {
-        return gaji;
+        return 1500000;
     }
 }
